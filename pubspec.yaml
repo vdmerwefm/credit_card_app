@@ -1,0 +1,56 @@
+name: credit_card
+description: A Very Good Project created by Very Good CLI.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  banned_country_api:
+    path: packages/config_package/banned_country_api
+  banned_country_repo:
+    path: packages/config_package/banned_country_repo
+  bloc: ^8.1.2
+  country_picker: ^2.0.21
+  credit_card_api:
+    path: packages/credit_cards_package/credit_card_api
+  credit_card_repository:
+    path: packages/credit_cards_package/credit_card_repository
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.0
+  json_annotation: ^4.8.1
+  local_storage_banned_country_api:
+    path: packages/config_package/local_storage_banned_country_api
+  local_storage_credit_card_api:
+    path: packages/credit_cards_package/local_storage_credit_card_api
+  mask_text_input_formatter: ^2.5.0
+  provider: ^6.0.5
+  rxdart: ^0.27.7
+  shared_preferences: ^2.2.2
+  vitality: ^2.0.0
+  
+dev_dependencies:
+  bloc_test: ^9.1.2
+  build_runner: ^2.4.6
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.7.1
+  mocktail: ^0.3.0
+  very_good_analysis: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/credit-card.png
+    - assets/images/visaImage.png
+    - assets/images/mastercardImage.png
+    - assets/images/unknown.png
+    - assets/images/delete.png
+  generate: true
+  
